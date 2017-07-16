@@ -4,8 +4,8 @@
     "description": "tutorial on react with redux ",
     "main": "gulpfile.js",
     "scripts": {
-        "start": "node app",
-        "postinstall": "gulp",
+        "start": "gulp",
+        //"postinstall": "",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "author": "Saman Jasim",
@@ -32,14 +32,15 @@
         "redux": "^3.6.0",
         "redux-promise": "^0.5.3",
         "redux-saga": "^0.15.4",
-        "vinyl-source-stream": "^1.1.0"
-    },
-    "devDependencies": {
+        "vinyl-source-stream": "^1.1.0",
         "babel-plugin-transform-object-rest-spread": "^6.23.0",
         "babel-plugin-transform-runtime": "^6.23.0",
         "babel-polyfill": "^6.23.0",
         "babel-preset-stage-3": "^6.24.1",
         "gulp-babel": "^6.1.2",
         "regenerator-runtime": "^0.10.5"
+    },
+    "devDependencies": {
+
     }
 }

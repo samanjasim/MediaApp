@@ -4,7 +4,8 @@
     "description": "tutorial on react with redux ",
     "main": "gulpfile.js",
     "scripts": {
-        "start": "gulp",
+        "postinstall": "gulp deploy",
+        "start": "nf start",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "author": "Saman Jasim",

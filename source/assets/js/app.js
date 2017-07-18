@@ -1,4 +1,4 @@
-require("babel-polyfill");
+//require("babel-polyfill");
 import React from 'react';
 import ReactDom from 'react-dom';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
@@ -12,7 +12,7 @@ import {configureStore} from './store/configureStore.js';
 // import Header from './common/Header.jsx';
 //import MainComponent from './components/MainComponent.jsx';
 // Initialize store
-console.log(configureStore);
+//console.log(configureStore);
 const store = configureStore();
 
 ReactDom.render(

@@ -140,7 +140,7 @@ function bundleApp(isProduction) {
         }
 
         browserObj
-            .transform("babelify", { presets: ["es2015", "react", "stage-3"], plugins: ['babel-polyfill', 'babel-plugin-transform-runtime', 'regenerator-runtime'] })
+            .transform("babelify", { presets: ["es2015", "react", "stage-3"], plugins: ['babel-polyfill'] })
             .bundle()
             .on('error', gutil.log)
             .pipe(source(filename))
@@ -152,6 +152,10 @@ function bundleApp(isProduction) {
 
     });
     browserSync.reload();
+
+
+    //'babel-plugin-transform-runtime',  'regenerator-runtime'
+
     // appBundler
     // // transform ES6 and JSX to ES5 with babelify
     //     .transform("babelify", { presets: ["es2015", "react"] })

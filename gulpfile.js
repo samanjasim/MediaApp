@@ -63,7 +63,8 @@ gulp.task('watch', function() {
         server: {
             baseDir: './',
             middleware: [historyApiFallback()]
-        }
+        },
+        open: false
     });
 
     gulp.watch(['../MediaApp_Scotch/source/assets/js/**/*.js*'], ['scripts']);
@@ -140,7 +141,7 @@ function bundleApp(isProduction) {
         }
 
         browserObj
-            .transform("babelify", { presets: ["es2015", "react", "stage-3"], plugins: ['babel-polyfill'] })
+            .transform("babelify", { presets: ["es2015", "react", "stage-3"], plugins: ['babel-plugin-transform-runtime'] })
             .bundle()
             .on('error', gutil.log)
             .pipe(source(filename))
